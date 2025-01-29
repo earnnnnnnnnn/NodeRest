@@ -22,7 +22,7 @@ let books = [
     }
 ];
 
-app.get('/book', (req,res) => {
+app.get('/books', (req,res) => {
     res.json(books);
 });
 
