@@ -1,14 +1,14 @@
 require("dotenv").config();
 const express = require('express');
-const Seqelize = require('sequelize');
+const Sequelize = require('sequelize');
 const app = express();
 
 app.use(express.json());
 
-const sequelize = new Seqelize('database', 'username', 'password', {
+const sequelize = new Sequelize('database', 'username', 'password', {
     host: 'localhost',
     dialect: 'sqlite',
-    storage: './Database/SQBooks.aqlite'
+    storage: './Database/SQBooks.sqlite'
 });
 
 // define the Book model
